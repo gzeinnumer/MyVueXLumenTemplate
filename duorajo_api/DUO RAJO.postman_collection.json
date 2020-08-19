@@ -1,0 +1,2095 @@
+{
+	"info": {
+		"_postman_id": "eaf7d90e-4b92-4b35-9d7c-73d505b10854",
+		"name": "DUO RAJO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "users/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjgyMTkzNCwiZXhwIjoxNTk2ODI1NTM0LCJuYmYiOjE1OTY4MjE5MzQsImp0aSI6ImpaWEV5VUJUU1p6QnFyVWkiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.16vPlk-UHNaXi3Dje6ffMxNJN8Jz8u49DDLUpIq9DMc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/users/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/insert",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjgyMTkzNCwiZXhwIjoxNTk2ODI1NTM0LCJuYmYiOjE1OTY4MjE5MzQsImp0aSI6ImpaWEV5VUJUU1p6QnFyVWkiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.16vPlk-UHNaXi3Dje6ffMxNJN8Jz8u49DDLUpIq9DMc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "whut123",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "zeiiin123@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567890",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "1234567890",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/users/insert",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/single",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjgyMTkzNCwiZXhwIjoxNTk2ODI1NTM0LCJuYmYiOjE1OTY4MjE5MzQsImp0aSI6ImpaWEV5VUJUU1p6QnFyVWkiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.16vPlk-UHNaXi3Dje6ffMxNJN8Jz8u49DDLUpIq9DMc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/users/single/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"single",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjgyMTkzNCwiZXhwIjoxNTk2ODI1NTM0LCJuYmYiOjE1OTY4MjE5MzQsImp0aSI6ImpaWEV5VUJUU1p6QnFyVWkiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.16vPlk-UHNaXi3Dje6ffMxNJN8Jz8u49DDLUpIq9DMc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "whut",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "zeiiin12@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567890",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/users/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjgyMTkzNCwiZXhwIjoxNTk2ODI1NTM0LCJuYmYiOjE1OTY4MjE5MzQsImp0aSI6ImpaWEV5VUJUU1p6QnFyVWkiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.16vPlk-UHNaXi3Dje6ffMxNJN8Jz8u49DDLUpIq9DMc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/users/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "parents",
+			"item": [
+				{
+					"name": "parents/insert",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5Njk3NTY3NywiZXhwIjoxNTk2OTc5Mjc3LCJuYmYiOjE1OTY5NzU2NzcsImp0aSI6IktOemV6cmdsTGVDbVRGQXMiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.kUbnnPKqq-2udvG4DEGdxhNQm78n9PFgSDEPT0iUQ-4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "parent_name",
+									"value": "name",
+									"type": "text"
+								},
+								{
+									"key": "parent_address",
+									"value": "address",
+									"type": "text"
+								},
+								{
+									"key": "parent_photo",
+									"value": "photo",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/parents/insert",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"parents",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "parents/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjgyMTkzNCwiZXhwIjoxNTk2ODI1NTM0LCJuYmYiOjE1OTY4MjE5MzQsImp0aSI6ImpaWEV5VUJUU1p6QnFyVWkiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.16vPlk-UHNaXi3Dje6ffMxNJN8Jz8u49DDLUpIq9DMc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/parents/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"parents",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "parents/single",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjgxODEzOCwiZXhwIjoxNTk2ODIxNzM4LCJuYmYiOjE1OTY4MTgxMzgsImp0aSI6IklzZDBOS1BXWWp4WHNpZG8iLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.QFsXVb75d0Dw3DYdgGqUC0x3dGexHiBPbRWwu2_ykEI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/parents/single/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"parents",
+								"single",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "parents/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjgxODEzOCwiZXhwIjoxNTk2ODIxNzM4LCJuYmYiOjE1OTY4MTgxMzgsImp0aSI6IklzZDBOS1BXWWp4WHNpZG8iLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.QFsXVb75d0Dw3DYdgGqUC0x3dGexHiBPbRWwu2_ykEI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "parent_id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/parents/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"parents",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "parents/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjgxODEzOCwiZXhwIjoxNTk2ODIxNzM4LCJuYmYiOjE1OTY4MTgxMzgsImp0aSI6IklzZDBOS1BXWWp4WHNpZG8iLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.QFsXVb75d0Dw3DYdgGqUC0x3dGexHiBPbRWwu2_ykEI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "parent_name",
+									"value": "name1",
+									"type": "text"
+								},
+								{
+									"key": "parent_address",
+									"value": "address1",
+									"type": "text"
+								},
+								{
+									"key": "parent_photo",
+									"value": "photo1",
+									"type": "text"
+								},
+								{
+									"key": "parent_id",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/parents/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"parents",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "dev_units",
+			"item": [
+				{
+					"name": "dev_units/insert",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjkxNzUwMiwiZXhwIjoxNTk2OTIxMTAyLCJuYmYiOjE1OTY5MTc1MDIsImp0aSI6IktVZHRBMElRSnBkaVlNMWgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.MneZIcQjJTs93z17KMOga4JDwd8bGYWSZSq4q53h6NY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "parent_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "dev_unit_name",
+									"value": "dev_unit_name",
+									"type": "text"
+								},
+								{
+									"key": "dev_unit_address",
+									"value": "dev_unit_address",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/dev_units/insert",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dev_units",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dev_units/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjkxNzUwMiwiZXhwIjoxNTk2OTIxMTAyLCJuYmYiOjE1OTY5MTc1MDIsImp0aSI6IktVZHRBMElRSnBkaVlNMWgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.MneZIcQjJTs93z17KMOga4JDwd8bGYWSZSq4q53h6NY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/dev_units/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dev_units",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dev_units/single",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjkxNzUwMiwiZXhwIjoxNTk2OTIxMTAyLCJuYmYiOjE1OTY5MTc1MDIsImp0aSI6IktVZHRBMElRSnBkaVlNMWgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.MneZIcQjJTs93z17KMOga4JDwd8bGYWSZSq4q53h6NY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/dev_units/single/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dev_units",
+								"single",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dev_units/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjkxNzUwMiwiZXhwIjoxNTk2OTIxMTAyLCJuYmYiOjE1OTY5MTc1MDIsImp0aSI6IktVZHRBMElRSnBkaVlNMWgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.MneZIcQjJTs93z17KMOga4JDwd8bGYWSZSq4q53h6NY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "parent_id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/dev_units/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dev_units",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dev_units/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NjkxNzUwMiwiZXhwIjoxNTk2OTIxMTAyLCJuYmYiOjE1OTY5MTc1MDIsImp0aSI6IktVZHRBMElRSnBkaVlNMWgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.MneZIcQjJTs93z17KMOga4JDwd8bGYWSZSq4q53h6NY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "parent_name",
+									"value": "name1",
+									"type": "text"
+								},
+								{
+									"key": "parent_address",
+									"value": "address1",
+									"type": "text"
+								},
+								{
+									"key": "parent_photo",
+									"value": "photo1",
+									"type": "text"
+								},
+								{
+									"key": "parent_id",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/dev_units/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dev_units",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "unit_parts",
+			"item": [
+				{
+					"name": "unit_parts/insert",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5Njk3NjU0OCwiZXhwIjoxNTk2OTgwMTQ4LCJuYmYiOjE1OTY5NzY1NDgsImp0aSI6IlBBVEpCRFNOWDFSSVhjbWUiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.XNIS265FDI73ViBbvUkp0WlFzawcXJd6OgGLhGYvQ6w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "unit_part_name",
+									"value": "PCS",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/unit_parts/insert",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"unit_parts",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "unit_parts/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5Njk3NjU0OCwiZXhwIjoxNTk2OTgwMTQ4LCJuYmYiOjE1OTY5NzY1NDgsImp0aSI6IlBBVEpCRFNOWDFSSVhjbWUiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.XNIS265FDI73ViBbvUkp0WlFzawcXJd6OgGLhGYvQ6w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/unit_parts/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"unit_parts",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "unit_parts/single",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5Njk3NjU0OCwiZXhwIjoxNTk2OTgwMTQ4LCJuYmYiOjE1OTY5NzY1NDgsImp0aSI6IlBBVEpCRFNOWDFSSVhjbWUiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.XNIS265FDI73ViBbvUkp0WlFzawcXJd6OgGLhGYvQ6w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/unit_parts/single/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"unit_parts",
+								"single",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "unit_parts/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5Njk3NjU0OCwiZXhwIjoxNTk2OTgwMTQ4LCJuYmYiOjE1OTY5NzY1NDgsImp0aSI6IlBBVEpCRFNOWDFSSVhjbWUiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.XNIS265FDI73ViBbvUkp0WlFzawcXJd6OgGLhGYvQ6w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "unit_part_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/unit_parts/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"unit_parts",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "unit_parts/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5Njk3NjU0OCwiZXhwIjoxNTk2OTgwMTQ4LCJuYmYiOjE1OTY5NzY1NDgsImp0aSI6IlBBVEpCRFNOWDFSSVhjbWUiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.XNIS265FDI73ViBbvUkp0WlFzawcXJd6OgGLhGYvQ6w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "unit_part_name",
+									"value": "name baru",
+									"type": "text"
+								},
+								{
+									"key": "unit_part_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/unit_parts/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"unit_parts",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "spare_parts",
+			"item": [
+				{
+					"name": "spare_parts/insert",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5Njk5MDkyOCwiZXhwIjoxNTk2OTk0NTI4LCJuYmYiOjE1OTY5OTA5MjgsImp0aSI6ImhXOVY0VVRuQWpySThNWUQiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.AIHHKpLCfVNvOqlfBcNB9pl9WpuF7wxSSkoxu0qZqKE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "dev_unit_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "unit_part_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "spare_part_name",
+									"value": "part 1",
+									"type": "text"
+								},
+								{
+									"key": "spare_part_harga_awal",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "spare_part_harga_jual",
+									"value": "20000",
+									"type": "text"
+								},
+								{
+									"key": "spare_part_stock",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "spare_part_sold",
+									"value": "2",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/spare_parts/insert",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"spare_parts",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "spare_parts/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5Njk5MDkyOCwiZXhwIjoxNTk2OTk0NTI4LCJuYmYiOjE1OTY5OTA5MjgsImp0aSI6ImhXOVY0VVRuQWpySThNWUQiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.AIHHKpLCfVNvOqlfBcNB9pl9WpuF7wxSSkoxu0qZqKE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/spare_parts/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"spare_parts",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "spare_parts/single",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5Njk5MDkyOCwiZXhwIjoxNTk2OTk0NTI4LCJuYmYiOjE1OTY5OTA5MjgsImp0aSI6ImhXOVY0VVRuQWpySThNWUQiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.AIHHKpLCfVNvOqlfBcNB9pl9WpuF7wxSSkoxu0qZqKE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/spare_parts/single/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"spare_parts",
+								"single",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "spare_parts/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5Njk5MDkyOCwiZXhwIjoxNTk2OTk0NTI4LCJuYmYiOjE1OTY5OTA5MjgsImp0aSI6ImhXOVY0VVRuQWpySThNWUQiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.AIHHKpLCfVNvOqlfBcNB9pl9WpuF7wxSSkoxu0qZqKE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "spare_part_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/spare_parts/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"spare_parts",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "spare_parts/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5Njk5MjAyNiwiZXhwIjoxNTk2OTk1NjI2LCJuYmYiOjE1OTY5OTIwMjYsImp0aSI6InlLUTFKT01VNGNab3V2d0YiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dvvmdAxjQUu9sj1UpP38XkQ600g-PCVR1GMtX6f984Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "dev_unit_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "unit_part_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "spare_part_name",
+									"value": "photo1",
+									"type": "text"
+								},
+								{
+									"key": "spare_part_harga_awal",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "spare_part_harga_jual",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "spare_part_stock",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "spare_part_sold",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "spare_part_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/spare_parts/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"spare_parts",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "car_brands",
+			"item": [
+				{
+					"name": "car_brands/insert",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NzAwMDM5MywiZXhwIjoxNTk3MDAzOTkzLCJuYmYiOjE1OTcwMDAzOTMsImp0aSI6Ilh2UDZGVGdZTHUzelFpYzIiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.IcD7jk-oaA6Ow5Y2N0qFQ1n9sD6AjFY-P5rajV4s-go",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "car_brand_name",
+									"value": "YAMAHA",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/car_brands/insert",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"car_brands",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "car_brands/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NzAwMDM5MywiZXhwIjoxNTk3MDAzOTkzLCJuYmYiOjE1OTcwMDAzOTMsImp0aSI6Ilh2UDZGVGdZTHUzelFpYzIiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.IcD7jk-oaA6Ow5Y2N0qFQ1n9sD6AjFY-P5rajV4s-go",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/car_brands/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"car_brands",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "car_brands/single",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NzAwMDM5MywiZXhwIjoxNTk3MDAzOTkzLCJuYmYiOjE1OTcwMDAzOTMsImp0aSI6Ilh2UDZGVGdZTHUzelFpYzIiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.IcD7jk-oaA6Ow5Y2N0qFQ1n9sD6AjFY-P5rajV4s-go",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/car_brands/single/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"car_brands",
+								"single",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "car_brands/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NzAwMDM5MywiZXhwIjoxNTk3MDAzOTkzLCJuYmYiOjE1OTcwMDAzOTMsImp0aSI6Ilh2UDZGVGdZTHUzelFpYzIiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.IcD7jk-oaA6Ow5Y2N0qFQ1n9sD6AjFY-P5rajV4s-go",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "car_brand_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/car_brands/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"car_brands",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "car_brands/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NzAwMDM5MywiZXhwIjoxNTk3MDAzOTkzLCJuYmYiOjE1OTcwMDAzOTMsImp0aSI6Ilh2UDZGVGdZTHUzelFpYzIiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.IcD7jk-oaA6Ow5Y2N0qFQ1n9sD6AjFY-P5rajV4s-go",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "car_brand_name",
+									"value": "name baru",
+									"type": "text"
+								},
+								{
+									"key": "car_brand_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/car_brands/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"car_brands",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "car_types",
+			"item": [
+				{
+					"name": "car_types/insert",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NzAwMTMwNiwiZXhwIjoxNTk3MDA0OTA2LCJuYmYiOjE1OTcwMDEzMDYsImp0aSI6Im9RVUEzSFhlTzdaRTJxVHgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.NbCL1fTV1OJjWvPnYw2nFCH-icUurdnRni3m7QLNSV4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "car_brand_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "car_type_name",
+									"value": "Mobil2",
+									"type": "text"
+								},
+								{
+									"key": "car_type_year",
+									"value": "2001",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/car_types/insert",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"car_types",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "car_types/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NzAwMTMwNiwiZXhwIjoxNTk3MDA0OTA2LCJuYmYiOjE1OTcwMDEzMDYsImp0aSI6Im9RVUEzSFhlTzdaRTJxVHgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.NbCL1fTV1OJjWvPnYw2nFCH-icUurdnRni3m7QLNSV4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/car_types/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"car_types",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "car_types/single",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NzAwMTMwNiwiZXhwIjoxNTk3MDA0OTA2LCJuYmYiOjE1OTcwMDEzMDYsImp0aSI6Im9RVUEzSFhlTzdaRTJxVHgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.NbCL1fTV1OJjWvPnYw2nFCH-icUurdnRni3m7QLNSV4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/car_types/single/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"car_types",
+								"single",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "car_types/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NzAwMTMwNiwiZXhwIjoxNTk3MDA0OTA2LCJuYmYiOjE1OTcwMDEzMDYsImp0aSI6Im9RVUEzSFhlTzdaRTJxVHgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.NbCL1fTV1OJjWvPnYw2nFCH-icUurdnRni3m7QLNSV4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "car_type_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/car_types/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"car_types",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "car_types/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NzAwMTMwNiwiZXhwIjoxNTk3MDA0OTA2LCJuYmYiOjE1OTcwMDEzMDYsImp0aSI6Im9RVUEzSFhlTzdaRTJxVHgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.NbCL1fTV1OJjWvPnYw2nFCH-icUurdnRni3m7QLNSV4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_login",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "car_brand_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "car_type_name",
+									"value": "nama1",
+									"type": "text"
+								},
+								{
+									"key": "car_type_year",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "car_type_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/car_types/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"car_types",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "regtister",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Zein",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "zein@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "regtister",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Zein",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "zein@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Aug 2020 15:39:10 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Aug 2020 15:39:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.6"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"name\": \"Zein\",\n        \"email\": \"zein@gmail.com\",\n        \"updated_at\": \"2020-08-03T15:39:09.000000Z\",\n        \"created_at\": \"2020-08-03T15:39:09.000000Z\",\n        \"id\": 1\n    },\n    \"message\": \"CREATED\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "zein@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
