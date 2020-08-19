@@ -19,7 +19,7 @@
                                     <i class="mdi mdi-eye"></i>
                                 </div>
                                 <div class="mt-5">
-                                    <a @click="login(email, password)" class="btn btn-block btn-warning btn-lg font-weight-medium">Login</a>
+                                    <a @click="login()" class="btn btn-block btn-warning btn-lg font-weight-medium">Login</a>
                                 </div>
                                 <div class="mt-3 text-center">
                                     <a href="#" class="auth-link text-white">Forgot password?</a>
